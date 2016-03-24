@@ -25,8 +25,8 @@ public class ImageComplexe extends Observable {
      * @param y Translation in Y
      */
     public void setDirection(float x,float y){
-        paramZoom.setParamX(x);
-        paramZoom.setParamY(y);
+        paramTranslation.setParamX(x);
+        paramTranslation.setParamX(y);
         this.notifyObservers();
     }
     
@@ -35,7 +35,7 @@ public class ImageComplexe extends Observable {
      * @param z Zoom magnification coefficient
      */
     public void setZoom(float z){
-        paramTranslation.setParam(z);
+        paramZoom.setParam(z);
         this.notifyObservers();
     }
     
