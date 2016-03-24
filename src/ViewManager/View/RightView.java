@@ -1,13 +1,19 @@
 package ViewManager.View;
 
-import ViewManager.Util.Observer.IObserver;
-
-import javax.swing.*;
+import java.awt.*;
 
 /**
  * Created by kevin on 2016-03-24.
  */
-public abstract class View extends JPanel implements IObserver {
+public class RightView extends View {
+
+    /**
+     * Constructeur
+     * @param img Image de la vue
+     */
+    public RightView(Image img){
+
+    }
 
     /**
      * paint
@@ -18,8 +24,4 @@ public abstract class View extends JPanel implements IObserver {
      * update
      */
     protected void update(){}
-
-
-
-
 }
